@@ -1,0 +1,150 @@
+:root {
+    /* PRIMARY COLORS */
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+
+    /* NEUTRAL COLORS */
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    background-color: var(--pale-blue);
+    background-image: url("images/pattern-background-desktop.svg");
+    background-repeat: repeat-x;
+    background-size: contain;
+}
+
+h1 {
+    color: var(--dark-blue);
+    font-weight: 900;
+    font-size: 30px;
+}
+
+p {
+    font-size: 16px;
+    color: var(--desaturated-blue);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-wrapper {
+    margin-top: 5%;
+    width: min-content;
+    background-color: #fff;
+    border: none;
+    border-radius: 1rem;
+}
+
+.card-wrapper img {
+    border-radius: 1rem 1rem 0 0;
+}
+
+.card-content {
+    text-align: center;
+    margin: 2rem 3rem;
+}
+
+.card-plan {
+    display: flex;
+    align-items: center;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    background-color: var(--very-pale-blue);
+}
+
+.card-plan-price {
+    margin-left: 1rem;
+}
+
+.card-plan-price p {
+    margin: 0;
+}
+
+.card-plan h1{
+    font-size: 16px;
+    margin: 0;
+}
+
+.card-plan a {
+    flex: 1;
+    text-align: right;
+    color: var(--bright-blue);
+}
+
+.card-button-proceed {
+    margin: 2rem auto;
+    border-radius: 1rem;
+    padding: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    color: #fff;
+    text-align: center;
+    background-color: var(--bright-blue);
+}
+
+.card-button-cancel {
+    padding-bottom: 2rem;
+    border-radius: 1rem;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    color: var(--desaturated-blue);
+    text-align: center;
+}
+
+.card-plan a:hover {
+    opacity: .7;
+    text-decoration: none;
+    box-shadow: none;
+}
+
+.card-button-proceed:hover {
+    opacity: .7;
+}
+
+.card-button-cancel:hover {
+    color: var(--dark-blue);
+}
+
+@media only screen and (max-width: 600px) {
+    .card-wrapper {
+        margin: 4rem 1rem;
+        width: auto;
+    }
+
+    .card-wrapper h1 {
+        font-size: 23px;
+    }
+
+    .card-wrapper img{
+      width: 100%;
+    }
+
+    .card-content {
+        margin: 2rem 1.5rem;
+        width: auto;
+    }
+
+    .card-plan {
+        padding: 1rem;
+    }
+
+    .card-plan img {
+        width: 20%;
+    }
+
+    .card-plan h1 {
+        font-size: 16px;
+    }
+
+    .card-button-cancel {
+        padding: 0;
+    }
+  }
