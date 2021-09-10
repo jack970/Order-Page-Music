@@ -51,5 +51,5 @@ i have added Global Variables in scope from css to manipulate the colors from th
 ```
 ## Author
 
-- Website - [page-music.netlify.app](page-music.netlify.app)
+- Website - [page-music.netlify.app](https://page-music.netlify.app)
 - Frontend Mentor - [@jack970](https://www.frontendmentor.io/profile/jack970)
